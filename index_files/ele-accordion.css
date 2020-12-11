@@ -1,0 +1,4 @@
+.ele-accordion-ul { margin:0; padding:0; list-style:none; width:100%; margin:0 auto;}
+.ele-accordion-li { display:block; padding:0; background:none;}
+.ele-accordion-title { width:100%; padding:15px; background-color:#333; color:#fff; font-weight:bold; display:block; text-decoration:none; border-bottom:solid 1px #999; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.ele-accordion-data { width:100%; padding:15px; background-color:#fff; color:#000; display:none; box-sizing:border-box; -webkit-box-sizing:border-box;}

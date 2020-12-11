@@ -1,0 +1,29 @@
+(function($){
+   $.fn.eleAccordion = function(options){
+	  var getele = $(this);
+	  var defaults = {
+		  time : 400,
+		  onlyone : true
+      }
+	  
+getele.each(function(eleNo){
+	  var settings = $.extend($(this), defaults, options);
+	  var ele = $(this);
+	  $(".ele-accordion-title").click(function(e){
+		  e.preventDefault();
+		  ele = $(this).closest(".ele-accordion");
+		  currentele = $(this).closest(".ele-accordion-li");
+		  if(settings.onlyone){
+		  	ele.find(".ele-accordion-data").stop().slideUp(settings.time);
+			//alert(ele.find(".ele-accordion-data"));
+		  }
+		  currentele.find(".ele-accordion-data").stop().slideToggle(settings.time);
+		  e.stopImmediatePropagation();
+	  })
+})// each
+}// $.fn
+})(jQuery);
+
+/*
+if(settings.type == "slide" || settings.type == ""){}
+*/
