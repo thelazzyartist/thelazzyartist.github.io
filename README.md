@@ -1,1 +1,0 @@
-# thelazzyartist.github.io
